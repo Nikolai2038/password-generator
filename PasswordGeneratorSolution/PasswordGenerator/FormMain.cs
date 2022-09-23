@@ -68,5 +68,11 @@ namespace PasswordGenerator {
             // Сохраняем текст в буфер обмена
             Clipboard.SetText(password);
         }
+
+        /// <summary>Событие загрузки формы</summary>
+        private void FormMain_Load(object sender, EventArgs e) {
+            // При загрузке формы сразу же ставим фокус на кнопке генерации
+            this.ActiveControl = this.Button_Generate;
+        }
     }
 }

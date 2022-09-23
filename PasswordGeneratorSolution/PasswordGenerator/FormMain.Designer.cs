@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panel1 = new System.Windows.Forms.Panel();
             this.NumericUpDown_PasswordLength = new System.Windows.Forms.NumericUpDown();
             this.Label_PasswordLength = new System.Windows.Forms.Label();
@@ -204,12 +205,14 @@
             this.Controls.Add(this.Label_Gap_1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.Padding = new System.Windows.Forms.Padding(8);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Генератор паролей v.1.0.0 | от Nikolai-415";
+            this.Text = "Генератор паролей v.1.0.1 | от Nikolai-415";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.NumericUpDown_PasswordLength)).EndInit();
             this.GroupBox_UsingSymbols.ResumeLayout(false);
